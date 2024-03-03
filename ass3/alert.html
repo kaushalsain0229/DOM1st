@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+	</head>
+	<body>
+		<button onclick="showFirstName()">FIRSTNAME</button>
+		<button onclick="showLastName()">LASTNAME</button>
+		<button onclick="showFullName()">FIRSTNAME LASTNAME</button>
+		<script type="text/javascript">
+            function showFirstName() {
+                var firstName = prompt("Enter your first name:");
+                if (firstName) {
+                    alert("First Name: " + firstName);
+                }
+            }
+
+            function showLastName() {
+                var lastName = prompt("Enter your last name:");
+                if (lastName) {
+                    alert("Last Name: " + lastName);
+                }
+            }
+
+            function showFullName() {
+                var firstName = prompt("Enter your first name:");
+                var lastName = prompt("Enter your last name:");
+                
+                if (firstName && lastName) {
+                    alert("Full Name: " + firstName + " " + lastName);
+                }
+            }
+        </script>
+	</body>
+</html>
